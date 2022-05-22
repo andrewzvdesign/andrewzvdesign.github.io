@@ -1,0 +1,248 @@
+
+html{
+    scroll-behavior: smooth;
+}
+
+:root{
+    --color-uno: rgb(63, 63, 62);
+    --color-dos: rgb(52, 52, 51);
+    --color-boton: #01baef;
+
+}
+
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+    text-decoration: none;
+}
+
+body {
+    background-color: var(--color-uno);
+}
+
+.container{
+    display: flex;
+    width: 80%;
+    max-width: 106.25;
+    margin: auto;
+    justify-content: space-between;
+    align-items: center;
+
+}
+
+nav {
+    background-color: var(--color-dos);
+    position: fixed;
+    width: 100%;
+    z-index: 2;
+}
+
+nav .nav {
+    padding: .9em 0em;
+}
+
+nav .container ul li {
+    display: inline;
+    padding: .2em;
+}
+
+nav .container ul li a{
+    font-size: 1em;
+    color: var(--color-boton);
+    padding: .8em 1em;
+    border-radius: 10px;
+}
+
+nav .container ul li a:hover{
+    color: beige;
+    background-color: var(--color-boton);
+}
+
+section .wrap {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content:center;
+    width: 70%;
+    height: 95vh;
+    max-width: 106.25em;
+    margin: auto;
+    text-align: center;
+    color: beige;
+    font-size: 1.4em;
+}
+
+section .wrap a{
+    color: beige;
+}
+
+.bienvenida .down {
+    margin-top: 2em;
+}
+
+.bienvenida {
+    background-color: #181818;
+    clip-path: polygon(0 0,100% 0,100% calc(100% - 50px),calc(50% + 50.00px) calc(100% - 50px),50% 100%,calc(50% - 50.00px) calc(100% - 50px),0 calc(100% - 50px));
+
+}
+
+.servicios {
+    background-color: var(--color-uno);
+}
+
+.portafolio {
+    background-color: #181818;
+    clip-path: polygon(0 0,100% 0,100% calc(100% - 50px),calc(50% + 50.00px) calc(100% - 50px),50% 100%,calc(50% - 50.00px) calc(100% - 50px),0 calc(100% - 50px));
+
+}
+
+section .titulo {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content:center;
+    width: 70%;
+    height: 20vh;
+    max-width: 106.25;
+    margin: auto;
+    padding-top: 5em;
+    text-align: center;
+    color: beige;
+    font-size: 1.4em;
+}
+
+.swiper {
+    width: 100%;
+    height: 70%;
+  }
+
+  .swiper-slide {
+    text-align: center;
+    font-size: 18px;
+    background: #fff;
+
+    /* Center slide text vertically */
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    -webkit-justify-content: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    -webkit-align-items: center;
+    align-items: center;
+  }
+
+  .swiper-slide img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+
+  .swiper-slide {
+    width: 80%;
+  }
+
+  .swiper-slide:nth-child(2n) {
+    width: 60%;
+  }
+
+  .swiper-slide:nth-child(3n) {
+    width: 40%;
+  }
+  
+  .ubicame {
+    background-color: var(--color-uno);
+  }
+
+  .flexbox {
+    border: 1px solid;
+    padding: 0em 2em 0em 2em;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: 1em 0em 1em 0em;
+    background-color: #181818;
+}
+
+.align-items{
+    display: flex;
+    height: 600px;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #181818;
+    flex-wrap: nowrap;
+
+}
+
+.container{
+    
+    padding: 1.563;
+    margin-top: 1.875;
+    width: 85%;
+    margin: auto;
+}
+
+.item{
+    width: 16.5em;
+    height: 20em;
+    
+    border-radius: 15px;
+    margin: 0.625em 0.938em;
+    padding: 0.938em;
+    color: beige;
+    
+}
+
+.fin{
+    background-color: var(--color-dos);
+    display: flex;
+    justify-content: space-around;
+    
+}
+
+footer .item{
+    width: 9.375;
+    height: auto;
+    text-align: center;
+    font-size: smaller;
+    border: none;
+
+}
+
+footer .item a{
+    text-decoration: none;
+    color: beige;
+
+}
+
+/* ##Dispositivo = Tablets, Ipads (horizontal) 768px to 1024px */
+@media (min-width: 768px) and (max-width: 1024px)  {
+    /*Aquí van las propiedades y valores según el dispositivo*/
+}
+
+/* ##Dispositivo = Tablets, Mobiles de 481px a 767px */
+@media (min-width: 481px) and (max-width: 767px) {
+    /*Aquí van las propiedades y valores según el dispositivo*/
+}
+
+/* ##Dispositivo = Smartphones de 320px a 479px */
+@media (min-width: 320px) and (max-width: 480px) {
+    .align-items{
+        display: flex;
+        height: 600px;
+        align-items: center;
+        justify-content: space-between;
+        background-color: #181818;
+        flex-wrap: wrap;
+    
+    }
+
+}
